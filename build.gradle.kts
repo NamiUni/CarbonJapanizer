@@ -35,19 +35,19 @@ dependencies {
     }
 }
 
-val mainPackage = "$group.${rootProject.name.lowercase()}"
+val mainPackage = "$group.carbonjapanizer"
 paperPluginYaml {
     author = "Namiu/Unitarou"
     website = "https://github.com/NamiUni"
     apiVersion = "1.21"
 
-    main = "$mainPackage.${rootProject.name}" // TODO: check
-    bootstrapper = "$mainPackage.PaperBootstrap" // TODO: change
-    loader = "$mainPackage.PaperPluginLoader" // TODO: change
+    main = "$mainPackage.carbonjapanizer"
+    bootstrapper = "$mainPackage.CarbonJapanizerBootstrap"
+    loader = "$mainPackage.CarbonJapanizerLoader"
 
     permissions {
-        register("${rootProject.name.lowercase()}.command.reload") {
-            description = "Reloads ${rootProject.name}'s config."
+        register("carbonjapanizer.command.reload") {
+            description = "Reloads CarbonJapanizer's config."
             default = Permission.Default.OP
         }
     }
@@ -94,7 +94,7 @@ tasks {
     }
 
     writeDependencies {
-        outputFileName = "${rootProject.name.lowercase()}-dependencies.txt" //TODO: check
+        outputFileName = "carbonjapanizer-dependencies.txt" //TODO: check
         repos.add("https://repo.papermc.io/repository/maven-public/")
         repos.add("https://repo.maven.apache.org/maven2/")
     }

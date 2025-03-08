@@ -1,6 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 
-rootProject.name = "PluginTemplate" // TODO: change
+rootProject.name = "CarbonJapanizer" // TODO: change
 
 dependencyResolutionManagement {
     repositories {
