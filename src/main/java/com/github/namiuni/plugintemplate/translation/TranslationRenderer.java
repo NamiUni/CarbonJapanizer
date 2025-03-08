@@ -41,12 +41,10 @@ import java.util.Map;
 @NullMarked
 public final class TranslationRenderer implements IMessageRenderer<Audience, String, Component, Component> {
 
-    private final ConfigurationManager configManager;
     private final MiniMessage miniMessage;
 
     @Inject
-    private TranslationRenderer(final ConfigurationManager configManager) {
-        this.configManager = configManager;
+    private TranslationRenderer() {
         this.miniMessage = this.customMiniMessage();
     }
 
@@ -89,11 +87,6 @@ public final class TranslationRenderer implements IMessageRenderer<Audience, Str
                 .tag("warn", Tag.styling(yellow))
                 .tag("info", Tag.styling(green))
                 .tag("debug", Tag.styling(blue));
-
-        final String prefix = this.configManager.primary().messagePrefix();
-        if (!prefix.isBlank()) {
-            tagResolver.resolver(Placeholder.parsed("prefix", prefix));
-        }
 
         return MiniMessage.builder()
                 .tags(tagResolver.build())
