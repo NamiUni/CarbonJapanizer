@@ -94,7 +94,7 @@ tasks {
     }
 
     writeDependencies {
-        outputFileName = "carbonjapanizer-dependencies.txt" //TODO: check
+        outputFileName = "carbonjapanizer-dependencies.txt"
         repos.add("https://repo.papermc.io/repository/maven-public/")
         repos.add("https://repo.maven.apache.org/maven2/")
     }

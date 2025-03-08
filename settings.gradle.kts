@@ -1,6 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 
-rootProject.name = "CarbonJapanizer" // TODO: change
+rootProject.name = "CarbonJapanizer"
 
 dependencyResolutionManagement {
     repositories {
