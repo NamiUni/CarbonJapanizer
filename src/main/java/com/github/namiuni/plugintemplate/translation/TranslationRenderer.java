@@ -19,7 +19,6 @@
  */
 package com.github.namiuni.plugintemplate.translation;
 
-import com.github.namiuni.plugintemplate.configuration.ConfigurationManager;
 import com.github.namiuni.plugintemplate.integration.MiniPlaceholdersExpansion;
 import com.google.inject.Inject;
 import io.github.miniplaceholders.api.MiniPlaceholders;
