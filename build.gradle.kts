@@ -23,6 +23,7 @@ dependencies {
         exclude("net.md-5")
     }
     compileOnly("io.github.miniplaceholders:miniplaceholders-api:2.3.0") // MiniPlaceholders
+    compileOnly("de.hexaoxi:carbonchat-api:3.0.0-beta.28") // Carbon
 
     // Libraries
     runtimeDownload("org.spongepowered:configurate-hocon:4.2.0") // config
@@ -41,7 +42,7 @@ paperPluginYaml {
     website = "https://github.com/NamiUni"
     apiVersion = "1.21"
 
-    main = "$mainPackage.carbonjapanizer"
+    main = "$mainPackage.CarbonJapanizerPaper"
     bootstrapper = "$mainPackage.CarbonJapanizerBootstrap"
     loader = "$mainPackage.CarbonJapanizerLoader"
 
@@ -89,12 +90,12 @@ tasks {
             url("https://download.luckperms.net/1573/bukkit/loader/LuckPerms-Bukkit-5.4.156.jar")
             modrinth("miniplaceholders", "wck4v0R0") // バージョンに2.3.0を指定すると何故かVelocityのjarがダウンロードされる
             modrinth("miniplaceholders-placeholderapi-expansion", "1.2.0")
+            modrinth("carbon", "3.0.0-beta.28")
             hangar("PlaceholderAPI", "2.11.6")
         }
     }
 
     writeDependencies {
-        outputFileName = "carbonjapanizer-dependencies.txt"
         repos.add("https://repo.papermc.io/repository/maven-public/")
         repos.add("https://repo.maven.apache.org/maven2/")
     }

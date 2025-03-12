@@ -59,7 +59,7 @@ public final class CarbonJapanizerModule extends AbstractModule {
         this.configureListeners();
         this.configureCommands();
 
-        this.bind(JavaPlugin.class).to(PluginTemplate.class).in(Scopes.SINGLETON);
+        this.bind(JavaPlugin.class).to(CarbonJapanizerPaper.class).in(Scopes.SINGLETON);
     }
 
     private void configureListeners() {

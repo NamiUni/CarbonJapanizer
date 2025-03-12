@@ -1,1 +1,4 @@
 # Carbon Japanizer
+CarbonJapanizerはCarbonChatの拡張機能です。
+ローマ字で送信されたメッセージをかな漢字に変換してチャット欄に表示することが可能になります。
+IME入力MODを導入していないプレイヤーなどに役立ちます。

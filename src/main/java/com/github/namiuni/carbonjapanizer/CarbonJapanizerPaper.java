@@ -27,12 +27,12 @@ import org.jspecify.annotations.NullMarked;
 import java.util.Set;
 
 @NullMarked
-public final class PluginTemplate extends JavaPlugin { // TODO: rename
+public final class CarbonJapanizerPaper extends JavaPlugin {
 
     private final Set<Listener> listeners;
 
     @Inject
-    private PluginTemplate(final Set<Listener> listeners) {
+    private CarbonJapanizerPaper(final Set<Listener> listeners) {
         this.listeners = listeners;
     }
 

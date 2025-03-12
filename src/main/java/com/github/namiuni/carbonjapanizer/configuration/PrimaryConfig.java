@@ -21,10 +21,22 @@ package com.github.namiuni.carbonjapanizer.configuration;
 
 import org.jspecify.annotations.NullMarked;
 import org.spongepowered.configurate.objectmapping.ConfigSerializable;
+import org.spongepowered.configurate.objectmapping.meta.Comment;
 
 @NullMarked
 @ConfigSerializable
 @SuppressWarnings({"FieldMayBeFinal", "FieldCanBeLocal"})
 public final class PrimaryConfig {
 
+    @Comment("""
+            ローマ字のメッセージをかな漢字へ変換する設定
+            メッセージのかな漢字変換はメッセージの"送信"時に実行されます。
+            """)
+    private JapanizeSettings japanizeSettings = new JapanizeSettings();
+
+    //    private DatabaseSettings databaseSettings;
+
+    public JapanizeSettings japanizeSettings() {
+        return this.japanizeSettings;
+    }
 }
