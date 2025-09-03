@@ -27,7 +27,7 @@ dependencies {
 
     // Libraries
     runtimeDownload("org.spongepowered:configurate-hocon:4.2.0") // config
-    runtimeDownload("net.kyori:adventure-serializer-configurate4:4.19.0") // config serializer
+    runtimeDownload("net.kyori:adventure-serializer-configurate4:4.24.0") // config serializer
     runtimeDownload("net.kyori.moonshine:moonshine-standard:2.0.4") // message
 
     // Misc
