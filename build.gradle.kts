@@ -22,7 +22,7 @@ dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT") {
         exclude("net.md-5")
     }
-    compileOnly("io.github.miniplaceholders:miniplaceholders-api:2.3.0") // MiniPlaceholders
+    compileOnly("io.github.miniplaceholders:miniplaceholders-api:3.0.1") // MiniPlaceholders
     compileOnly("de.hexaoxi:carbonchat-api:3.0.0-beta.33") // Carbon
 
     // Libraries
