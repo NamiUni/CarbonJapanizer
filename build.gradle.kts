@@ -19,7 +19,7 @@ java {
 
 dependencies {
     // Paper
-    compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT") {
+    compileOnly("io.papermc.paper:paper-api:26.2.build.121-stable") {
         exclude("net.md-5")
     }
     compileOnly("io.github.miniplaceholders:miniplaceholders-api:3.0.1") // MiniPlaceholders
