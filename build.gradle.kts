@@ -23,7 +23,7 @@ dependencies {
         exclude("net.md-5")
     }
     compileOnly("io.github.miniplaceholders:miniplaceholders-api:3.0.1") // MiniPlaceholders
-    compileOnly("de.hexaoxi:carbonchat-api:3.0.0-beta.33") // Carbon
+    compileOnly("de.hexaoxi:carbonchat-api:3.0.0-SNAPSHOT") // Carbon
 
     // Libraries
     runtimeDownload("org.spongepowered:configurate-hocon:4.2.0") // config
